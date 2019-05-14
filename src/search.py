@@ -118,7 +118,7 @@ def graph_search(problem, fringe):
         if node.state not in closed:
             closed[node.state] = True
             expand = node.expand(problem)
-            expand_count += len(expand)
+            expand_count += 1
             fringe.extend(expand)
     return None
 
